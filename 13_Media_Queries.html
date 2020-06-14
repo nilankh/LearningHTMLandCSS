@@ -12,11 +12,31 @@
             text-align: center;
             padding-top: 100px;
         }
+
+        h1 {
+            display: none;
+        }
+
         /* iske andar max width min width./height */
         /* Smartphones */
-        @media(max-width: 500px) {
+        /* @media(min-width: 500px) { */
+        /* @media(max-width: 500px) { */
+        @media only screen and (max-width:  500px){
             body {
                 background: red;
+            }
+            #smartphone h1 {
+                display: block;
+            }
+        }
+
+        /* Tablets */
+        @media(min-width: 501) and (max-width: 768px) {
+            body {
+                background: blue;
+            }
+            #tablet h1 {
+                display: block;
             }
         }
 
