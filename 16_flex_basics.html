@@ -5,11 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex basics</title>
     <style>
+        #container {
+            display: flex; /* by default display flex se horizontally hoga */
+            flex-direction: row;
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+
+
+
+        }
         .item {
             background: #f4f4f4;
             border: #ccc solid 1px;
             padding: 1rem;
             text-align: center;
+            flex: 1;
         }
     </style>
 </head>
