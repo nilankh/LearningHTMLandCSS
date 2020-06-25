@@ -5,8 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Target Selector</title>
     <style>
-        div p{
+        /* Direct child */
+        /* div p{
             background: #ddd;
+        } */
+        div > p {
+            background: #ddd;
+        }
+
+        /* Directly after */
+        div + p {
+            background: #333;
+            color: #fff;
         }
     </style>
 </head>
@@ -15,6 +25,7 @@
         <p>Lorem ipsum dolor sit amet.</p>
         <ul>
             <li>Item1</li>
+            <!-- if we do div> p this will not work bcz this p is not direct parent of div -->
             <li><p>Item2</p></li>
             <li>Item3</li>
         </ul>
@@ -23,5 +34,7 @@
     </div>
 
     <p>Lorem ipsum dolor sit amet.</p>
+
+    <a href="#">Page1</a> <a href="#">page2</a> <a href="http://www.google.com" target="_blank">Google</a>
 </body>
 </html>
