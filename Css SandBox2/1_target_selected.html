@@ -18,6 +18,19 @@
             background: #333;
             color: #fff;
         }
+
+        /* BY attribute */
+        a[target] {
+            background: #ff0000;
+            color: #fff;
+        }
+
+        /* Specific attribute values */
+        input[type='text'],
+        input[type="email"] {
+            width: 100%;
+            margin-bottom: 5px;
+        }
     </style>
 </head>
 <body>
@@ -36,5 +49,13 @@
     <p>Lorem ipsum dolor sit amet.</p>
 
     <a href="#">Page1</a> <a href="#">page2</a> <a href="http://www.google.com" target="_blank">Google</a>
+
+    <br><br>
+    <form action="">
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <input type="submit" placeholder="Submit">
+    </form>
+
 </body>
 </html>
