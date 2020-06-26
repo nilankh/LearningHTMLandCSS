@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Css Variables</title>
     <style>
+        :root {
+            --max-width: 1100px;
+            --primary-color: steelblue;
+            --secondary-color: skyblue;
+            --light-color: #f4f4f4;
+        }
+
+
         * {
             margin: 0;
             padding: 0;
@@ -13,7 +21,28 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
             line-height: 1.4;
-            background: #f4f4f4;
+            /* --light-color: #f4f4f4;this is how we create variable and use it */
+
+            background: var(--light-color);
+
+        }
+        header {
+            background-color: var(--primary-color);
+            border-bottom: 5px var(--secondary-color) solid;
+            color: #fff;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            margin: auto;
+            max-width: var(--max-width)
+        }
+
+        .box {
+            background-color: var(--primary-color);
+            border-bottom: 5px var(--secondary-color) solid;
+            color: #fff;
         }
     </style>
 </head>
