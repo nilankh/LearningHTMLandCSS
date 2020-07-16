@@ -7,7 +7,13 @@
     <style>
         .grid {
             display: grid;
-            grid-template-columns: 200px 200px 200px;
+            /* grid-template-columns: 200px auto 200px; */
+            /* grid-template-columns: auto auto auto; */
+            /* grid-template-columns: repeat(3, auto); */
+            /* fr means fractions */
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-gap: 1rem;
         
         }
         .item {
@@ -17,6 +23,12 @@
             font-size: 1.3rem;
             font-weight: bold;
             text-align: center;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-gap: 1.5rem;
         }
     </style>
 </head>
@@ -29,5 +41,15 @@
         <div class="item">Item 5</div>
         <div class="item">Item 6</div>
     </div>
+    <main>
+        <section>
+            <h3>Welcome to My site</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt magni inventore in perferendis veritatis asperiores, molestias illum optio. Nemo, repudiandae molestiae nisi sed eveniet quisquam excepturi saepe sapiente dolorum sunt.</p>
+        </section>
+        <aside>
+            <h3>Hello</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, aspernatur.</p>
+        </aside>
+    </main>
 </body>
 </html>
